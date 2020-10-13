@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/bottomSheetContainer"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="Orientation">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        android:id="@+id/txt_tieude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tôi ở đây để?"
+        android:textSize="30dp" />
+
+
+    <RadioGroup
+        android:id="@+id/rd_text"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:id="@+id/checkbox"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:checked="true"
+            android:text="Tìm bạn mới"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/checkbox1"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Để chat"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/checkbox2"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tìm một người bạn thân"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/checkbox3"
+            android:layout_width="401dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tìm kiếm một mối quan hệ nghiêm túc"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+    </RadioGroup>
+
+</LinearLayout>

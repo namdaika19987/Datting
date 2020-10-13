@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.datting">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Notifications.LanguageActivity"></activity>
+        <activity android:name=".Notifications.SmokingActivity" />
+        <activity android:name=".Notifications.DrinkActivity" />
+        <activity android:name=".Notifications.weightActivity" />
+        <activity android:name=".Notifications.HeightActivity" />
+        <activity android:name=".Notifications.About_You_Activity" />
+        <activity android:name=".Notifications.Academic_Work_Activity" />
+        <activity android:name=".Notifications.AccountActivity" />
+        <activity android:name=".Notifications.Information" />
+        <activity android:name=".AnimActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Adapter.MessChat"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Navigation.Botomnavigationview"
+            android:label="@string/title_activity_botomnavigationview" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme2" />
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+    </application>
+
+</manifest>
